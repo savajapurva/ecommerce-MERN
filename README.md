@@ -1,4 +1,4 @@
-# ecommerce-MERN
+# eCommerce-MERN
 The Book Store made with React, MongoDB, NodeJS &amp; ExpressJS
 
 Live link: <a href="https://devnwk.herokuapp.com/" target="_blank"> Click here</a>
