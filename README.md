@@ -1,9 +1,9 @@
 # eCommerce-MERN
 The Book Store made with React, MongoDB, NodeJS &amp; ExpressJS
 
-Live link: <a href="https://devnwk.herokuapp.com/" target="_blank"> Click here</a>
+Live link: <a href="https://reactshop.xyz/" target="_blank"> Click here</a>
 
-<img src="client/src/img/homepage.png">
+<img src="img/React App.png">
 
 ---
 
@@ -11,25 +11,29 @@ Live link: <a href="https://devnwk.herokuapp.com/" target="_blank"> Click here</
 
 ```bash
 # clone repository
-https://github.com/savajapurva/DevsNetwork-MERN.git
+https://github.com/savajapurva/ecommerce-MERN.git
 
 # Install dependencies
-cd DevsNetwork-MERN && npm install
+cd ecommerce-MERN && npm install
+cd ecommerce-MERN-Frontend && npm install
 
 ```
-
-Enter mongoURI and secret in config->keys_dev.js
+Create an account in Braintree and create new App. Copy the provided credentials to your app. 
+Enter following creadentials in .env file.
 
 ```
-mongoURI=YOUR_OWN_MONGO_URI
-secretOrKey=YOUR_OWN_SECRET
+DATABASE=mongodb://localhost/ecommerce
+JWT_SECRET=hdfsajkfhlsdkja
+BRAINTREE_MERCHANT_ID=YOUR_OWN_ID
+BRAINTREE_PUBLIC_KEY=YOUR_OWN_KEY
+BRAINTREE_PRIVATE_KEY=YOUR_OWN_ID
 ```
 
 To run the development server:
 
 ```bash
 # the development server runs on port 3000
-npm run dev
+npm start
 ```
 
 To run production build:
@@ -42,62 +46,35 @@ npm run build
 npm run prod
 ```
 
-In the project a `Procfile` has also been provided. This file is used by Heroku.
 
-### To deploy this project to heroku see steps below:
-
-You will need to install the [heroku-cli](https://devcenter.heroku.com/articles/heroku-cli)
-
-```bash
-# Heroku-cli (paste link in browser)
-https://devcenter.heroku.com/articles/heroku-cli
-```
-
-Afer installing heroku-cli run the following commands in terminal
-
-```bash
-# login locally
-heroku login
-```
-
-You will be prompted to enter your email and password which is the same the email and password used when you sign up for Heroku
-
-```bash
-# create your app
-heroku create
-
-# set enviroment vareiables
-heroku config:set mongoURI=YOUR_OWN_MONGO_URI
-heroku config:set secretOrKey=YOUR_OWN_SECRET
-```
-
-Try to keep your production DB different from development DB
-
-```bash
-# bundle code for production
-npm run build
-
-# deploy code to heroku
-git push heroku master:master
-```
-
-<img src="client/src/img/overallprofile.png">
+<img src="img/React App (1).png">
 
 ---
 
-<img src="client/src/img/dashboard.png">
+<img src="img/React App (4).png">
 
 ---
 
-<img src="client/src/img/devlist.png">
+<img src="img/React App (3).png">
 
 ---
 
-<img src="client/src/img/posts.png">
+<img src="img/React App (6).png">
 
 ---
 
-<img src="client/src/img/form1.png">
+<img src="img/React App (8).png">
+
+---
+
+<img src="img/React App (9).png">
+
+---
+
+<img src="img/React App (11).png">
+
+---
+<img src="img/React App (10).png">
 
 ---
 
@@ -106,33 +83,33 @@ git push heroku master:master
 ### Client Side
 
 - [x] **[React](https://github.com/facebook/react)**
-- [x] **[Redux](https://github.com/reactjs/redux)**
-- [x] **[Twitter Bootstap 4](https://github.com/twbs/bootstrap/tree/v4-dev)**
+- [x] **[Bootstap 4](https://github.com/twbs/bootstrap/tree/v4-dev)**
 - [x] **[React-Router-DOM](https://github.com/ReactTraining/react-router/tree/master/packages/react-router-dom)**
 
 #### Libraries used in Client-side
 
-- [x] **[axios](https://github.com/axios/axios)**
-- [x] **[classnames](https://github.com/JedWatson/classnames)**
-- [x] **[react-moment](https://github.com/headzoo/react-moment)**
-- [x] **[react-redux](https://github.com/reduxjs/react-redux)**
-- [x] **[redux-thunk](https://github.com/reduxjs/redux-thunk)**
-- [x] **[validator](https://github.com/chriso/validator.js)**
+- [x] **[query-string](https://github.com/sindresorhus/query-string)**
+- [x] **[moment](https://github.com/headzoo/react-moment)**
+- [x] **[braintree-web-drop-in-react](https://github.com/braintree/braintree-web)**
+- [x] **[braintree-web](https://github.com/braintree/braintree-web)**
 
 ### Server Side
 
 - [x] **[Node.js / Express](https://github.com/expressjs/express)**
 - [x] **[MongoDB](https://github.com/mongodb/mongo)**
 - [x] **[JWT](https://github.com/auth0/node-jsonwebtoken)**
-- [x] **[Passport](http://www.passportjs.org/)**
-- [x] **[Passport-jwt](https://github.com/themikenicholson/passport-jwt)**
+- [x] **[dotenv](https://github.com/motdotla/dotenv)**
+- [x] **[cors](https://github.com/expressjs/cors)**
+- [x] **[uuid](https://github.com/kelektiv/node-uuid)**
 
 #### Libraries used in Server-side
 
-- [x] **[bcryptjs](https://github.com/dcodeIO/bcrypt.js)**
-- [x] **[bluebird](http://bluebirdjs.com/docs/getting-started.html)**
-- [x] **[gravatar](https://github.com/emerleite/node-gravatar)**
+- [x] **[cookie-parser](https://github.com/expressjs/cookie-parser)**
+- [x] **[loadash](https://github.com/lodash/lodash)**
+- [x] **[formidable](https://github.com/node-formidable/node-formidable)**
+- [x] **[braintree](https://github.com/braintree)**
+- [x] **[morgan](https://github.com/expressjs/morgan)**
 - [x] **[mongoose](http://mongoosejs.com/)**
 - [x] **[jwt-decode](https://github.com/auth0/jwt-decode)**
 - [x] **[moment](https://momentjs.com/)**
-- [x] **[validator](https://github.com/chriso/validator.js)**
+- [x] **[express-validator](https://github.com/express-validator/express-validator)**
