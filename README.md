@@ -78,6 +78,10 @@ npm run prod
 
 ---
 
+<img src="img/Welcome - Braintree Gateway.png">
+
+---
+
 ## Main Technologies
 
 ### Client Side
