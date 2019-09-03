@@ -112,4 +112,4 @@ npm run prod
 - [x] **[mongoose](http://mongoosejs.com/)**
 - [x] **[jwt-decode](https://github.com/auth0/jwt-decode)**
 - [x] **[moment](https://momentjs.com/)**
-- [x] **[validator](https://github.com/chriso/validator.js)**
+- [x] **[express-validator](https://github.com/express-validator/express-validator)**
