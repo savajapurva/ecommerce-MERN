@@ -11,25 +11,29 @@ Live link: <a href="https://devnwk.herokuapp.com/" target="_blank"> Click here</
 
 ```bash
 # clone repository
-https://github.com/savajapurva/DevsNetwork-MERN.git
+https://github.com/savajapurva/ecommerce-MERN.git
 
 # Install dependencies
-cd DevsNetwork-MERN && npm install
+cd ecommerce-MERN && npm install
+cd ecommerce-MERN-Frontend && npm install
 
 ```
-
-Enter mongoURI and secret in config->keys_dev.js
+Create an account in Braintree and create new App. Copy the provided credentials to your app. 
+Enter following creadentials in .env file.
 
 ```
-mongoURI=YOUR_OWN_MONGO_URI
-secretOrKey=YOUR_OWN_SECRET
+DATABASE=mongodb://localhost/ecommerce
+JWT_SECRET=hdfsajkfhlsdkja
+BRAINTREE_MERCHANT_ID=YOUR_OWN_ID
+BRAINTREE_PUBLIC_KEY=YOUR_OWN_KEY
+BRAINTREE_PRIVATE_KEY=YOUR_OWN_ID
 ```
 
 To run the development server:
 
 ```bash
 # the development server runs on port 3000
-npm run dev
+npm start
 ```
 
 To run production build:
@@ -42,62 +46,35 @@ npm run build
 npm run prod
 ```
 
-In the project a `Procfile` has also been provided. This file is used by Heroku.
 
-### To deploy this project to heroku see steps below:
-
-You will need to install the [heroku-cli](https://devcenter.heroku.com/articles/heroku-cli)
-
-```bash
-# Heroku-cli (paste link in browser)
-https://devcenter.heroku.com/articles/heroku-cli
-```
-
-Afer installing heroku-cli run the following commands in terminal
-
-```bash
-# login locally
-heroku login
-```
-
-You will be prompted to enter your email and password which is the same the email and password used when you sign up for Heroku
-
-```bash
-# create your app
-heroku create
-
-# set enviroment vareiables
-heroku config:set mongoURI=YOUR_OWN_MONGO_URI
-heroku config:set secretOrKey=YOUR_OWN_SECRET
-```
-
-Try to keep your production DB different from development DB
-
-```bash
-# bundle code for production
-npm run build
-
-# deploy code to heroku
-git push heroku master:master
-```
-
-<img src="client/src/img/overallprofile.png">
+<img src="img/React App (1).png">
 
 ---
 
-<img src="client/src/img/dashboard.png">
+<img src="img/React App (4).png">
 
 ---
 
-<img src="client/src/img/devlist.png">
+<img src="img/React App (6).png">
 
 ---
 
-<img src="client/src/img/posts.png">
+<img src="img/React App (3).png">
 
 ---
 
-<img src="client/src/img/form1.png">
+<img src="img/React App (8).png">
+
+---
+
+<img src="img/React App (9).png">
+
+---
+
+<img src="img/React App (11).png">
+
+---
+<img src="img/React App (10).png">
 
 ---
 
